@@ -1,11 +1,9 @@
 jQuery(function($) {
 	"use strict";
-	// Author Code Here
 
 	var owlPricing;
 	var ratio = 2;
 
-	// Window Load
 	$(window).load(function() {
 		// Preloader
 		$('.intro-tables, .parallax, header').css('opacity', '0');
@@ -144,16 +142,12 @@ jQuery(function($) {
 			}
 		}
 	});
-
 	function centerModal() {
 		$(this).css('display', 'block');
 		var $dialog = $(this).find(".modal-dialog"),
 			offset = ($(window).height() - $dialog.height()) / 2,
 			bottomMargin = parseInt($dialog.css('marginBottom'), 10);
 
-		// Make sure you don't hide the top part of the modal w/ a negative margin
-		// if it's longer than the screen height, and keep the margin equal to 
-		// the bottom margin of the modal
 		if (offset < bottomMargin) offset = bottomMargin;
 		$dialog.css("margin-top", offset);
 	}

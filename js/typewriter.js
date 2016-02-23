@@ -1,7 +1,3 @@
-// typewriter
-
-// 3215287
-// bertaec32@gmail.com
 (function($, w, d, undefined) {
 
   function typewriter() {
@@ -29,10 +25,6 @@
 				}, dataSpeed);
       // self.animation = setInterval(function(){animate_calification()}, 20);
     }
-
-    
-    
-    // Metodos publicos
     return {
       init: init
     }
