@@ -217,15 +217,13 @@
 				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
 				<h3 class="white">Sign Up</h3>
 				<form action="" class="popup-form">
-					<input type="text" class="form-control form-white" placeholder="Full Name">
-					<input type="text" class="form-control form-white" placeholder="Email Address">
-					<div class="checkbox-holder text-left">
-						<div class="checkbox">
-							<input type="checkbox" value="None" id="squaredOne" name="check" />
-							<label for="squaredOne"><span>I Agree to the <strong>Terms &amp; Conditions</strong></span></label>
+					<div class="checkbox-holder text-center">
+						<div class="checkbox text-center">
+							<input type="checkbox" value="None" id="squaredOne" name="check" required="required" onclick="validate()" />
+							<label for="squaredOne"><span>I Agree to the <strong><a href="terms">Terms &amp; Conditions</a></strong></span></label>
 						</div>
 					</div>
-					<button type="submit" class="btn btn-submit">Submit</button>
+					<a href="mailto:dhruvmurada@gmail.com" class="btn btn-submit" onclick="validate()">Submit</a>
 				</form>
 			</div>
 		</div>
@@ -236,7 +234,7 @@
 				<div class="col-sm-6 text-center-mobile">
 					<h3 class="white">Are you ready to join CampusBIZ?</h3>
 					<h5 class="light regular light-white">Register and we will contact you as soon as possible.</h5>
-					<a href="#" class="btn btn-blue ripple trial-button">Sign Up</a>
+					<a href="" data-toggle="modal" data-target="#modal1" class="btn btn-blue ripple trial-button">Sign Up</a>
 				</div>
 				<div class="col-sm-6 text-center-mobile">
 					<h3 class="white">Opening Hours <span class="open-blink"></span></h3>
@@ -271,6 +269,7 @@
 		</ul>
 		<a href="#" class="close-link"><i class="arrow_up"></i></a>
 	</div>
+	<script type="text/javascript">function validate() {if (document.getElementById('squaredOne').checked){exit(0);} else {window.open('terms.html');alert("Please read the terms and conditions before submission.");}}</script>
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
